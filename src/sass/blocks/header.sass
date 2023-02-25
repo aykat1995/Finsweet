@@ -1,0 +1,97 @@
+.header
+  padding: 25px 0
+  margin-bottom: 100px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__left
+    display: flex
+  &__logo
+    display: flex
+    align-items: center
+    margin-right: 50px
+    &__text
+      font-size: 18px
+      color: #FFB577
+      font-weight: 500
+  &__burger
+    display: none
+  &__nav
+    display: flex
+    align-items: center
+    margin-right: 25%
+    &__link
+      font-size: 16px
+      font-weight: 500
+      margin-right: 40px
+      color: #fff
+  &__clone
+    display: flex
+    align-items: center
+    &__link
+      color: #FFB577
+
+@media(max-width: 1320px)
+  .header
+    &__nav
+      margin-right: 4%
+
+@media(max-width: 997px)
+  .header
+    margin-bottom: 50px
+    &__wrapper
+      position: relative
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      cursor: pointer
+      outline: none
+      order: 4
+      &::before, &::after, span
+        position: absolute
+        width: 100%
+        background-color: #fff
+        height: 2px
+        left: 0
+        transition: all 0.3s ease 0s
+      &::before
+        content: '',
+        top: 0
+      &::after
+        content: '',
+        bottom: 0
+      &.active
+        &::after
+          transform: rotate(-45deg)
+          bottom: 9px
+        &::before
+          transform: rotate(45deg)
+          top: 9px
+        span
+          transform: scale(0)
+      span
+        top: 9px
+    &__nav
+      flex-direction: column
+      margin-right: 0
+      position: absolute
+      width: 0
+      right: -20px
+      top: 40px
+      transition: all 0.3s ease 0s
+      display: none
+      &.active
+        display: flex
+        width: 40%
+      &__link
+        background-color: grey
+        padding: 15px
+        width: 100%
+        display: block
+        text-align: center
+    &__clone
+      order: 2
+      margin-left: 30%

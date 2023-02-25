@@ -1,0 +1,44 @@
+.about
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__side
+    flex-basis: 50%
+    max-width: 610px
+  &__title
+    margin: 24px 0 32px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin: 40px 0 32px
+    &__item
+      max-width: 180px
+    &__title
+      font-weight: 500
+      font-size: 24px
+      line-height: 36px
+      color: #C4E4EA
+    &__text
+      display: block
+  &__gallery
+    display: flex
+    justify-content: space-between
+    height: 595px
+  &__img
+    &:nth-child(1)
+      align-self: flex-end
+    &:nth-child(2)
+      align-self: flex-start
+
+@media (max-width: 997px)
+  .about
+    &__side
+      max-width: 100%
+      width: 100%
+    &__wrapper
+      flex-direction: column
+    &__gallery
+      margin-top: 40px
+      width: 100%
+      justify-content: space-around

@@ -1,0 +1,26 @@
+.serving
+  &__titles
+    display: flex
+    justify-content: space-between
+    &__title
+      margin: 24px 0 32px
+    &__text
+      max-width: 550px
+  &__box
+    display: flex
+    flex-wrap: wrap
+    background-color: rgba(0, 0, 0, 0.16)
+    margin-top: 60px
+  &__item
+    width: 33%
+    padding: 64px
+    &__title
+      font-size: 32px
+
+@media(max-width: 997px)
+  .serving
+    &__titles
+      flex-direction: column
+    &__item
+      padding: 50px
+      width: 50%
