@@ -31,6 +31,75 @@
     &:nth-child(2)
       align-self: flex-start
 
+  &__best
+    &__wrapper
+      padding: 120px 90px
+      background: url(../assets/img/more/section_bg.jpg) no-repeat center / cover
+    &__title
+      font-weight: 700
+      font-size: 48px
+      line-height: 58px
+      margin-bottom: 25px
+      max-width: 430px
+      span
+        color: #FFC492
+    &__text
+      max-width: 430px
+
+  &__history
+    &__wrapper
+      background-color: rgba(255, 255, 255, 0.03)
+      padding: 80px
+    &__title
+      margin-bottom: 70px
+    &__items
+      display: flex
+    &__item
+      flex: 1
+      border-top: 2px dashed rgba(255, 255, 255, 0.15)
+      display: flex
+      flex-direction: column
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: -4px
+        width: 35px
+        height: 6px
+        background-color: #FFC492
+    &__subtitle
+      margin: 16px 0
+      font-family: 'Playfair Display'
+      font-weight: 700
+      font-size: 20px
+      line-height: 30px
+      max-width: 240px
+      color: #fff
+    &__date
+      font-size: 32px
+      line-height: 44px
+      font-weight: 600
+      margin-top: 30px
+      color: #fff
+    &__text
+      max-width: 240px
+
+  &__stand
+    &__wrapper
+      display: flex
+    &__title
+      font-size: 48px
+      line-height: 58px
+      max-width: 560px
+      flex: 1
+    &__right
+      flex: 1
+      &-title
+        font-size: 32px
+        line-height: 48px
+        margin-bottom: 25px
+
 @media (max-width: 997px)
   .about
     &__side
@@ -42,3 +111,32 @@
       margin-top: 40px
       width: 100%
       justify-content: space-around
+    &__history
+      &__wrapper
+        padding: 50px
+      &__items
+        flex-direction: column
+      &__text
+        max-width: 80%
+        display: block
+        margin-bottom: 40px
+      &__title
+        margin-bottom: 50px
+
+@media (max-width: 600px)
+  .about
+    &__info
+      margin: 27px 0 22px
+      flex-direction: column
+      align-items: flex-start
+      &__item
+        margin-bottom: 20px
+        max-width: 100%
+    &__gallery
+      display: none
+    &__stand
+      &__wrapper
+        flex-direction: column
+      &__title
+        margin-bottom: 30px
+        max-width: 100%

@@ -50,6 +50,9 @@
   margin-right: 40px;
   color: #fff;
 }
+.header__nav__link:last-child {
+  margin-right: 0;
+}
 .header__clone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +130,7 @@
     margin-right: 0;
     position: absolute;
     width: 0;
-    right: -20px;
+    right: 0;
     top: 40px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -145,11 +148,21 @@
     width: 100%;
     display: block;
     text-align: center;
+    margin-right: 0;
+  }
+  .header__nav__link:hover {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
   }
   .header__clone {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin-left: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .header__clone {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=header.css.map */

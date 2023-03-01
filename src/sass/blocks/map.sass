@@ -1,0 +1,29 @@
+.map
+  &__wrapper
+    display: flex
+    background-color: #1F1D21
+  &__info
+    flex: 1 0 0
+    padding: 80px 60px
+    color: #fff
+    &__item
+      margin-bottom: 30px
+      display: flex
+      flex-direction: column
+    &__title
+      font-size: 20px
+      margin-bottom: 10px
+  &__map
+    flex: 2 0 0
+
+@media(max-width: 997px)
+  .map
+    &__wrapper
+      flex-direction: column
+    &__info
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 50px 30px
+      &__item
+        margin-bottom: 0

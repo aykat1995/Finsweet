@@ -20,32 +20,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__logo">
-          <img src="assets/img/logo-scops.svg" alt="" class="img">
-          <span class="header__logo__text">Finsweet</span>
-        </div>
-        <div class="header__burger">
-          <span></span>
-        </div>
-        <nav class="header__nav">
-          <a href="#" class="header__nav__link">Home</a>
-          <a href="#" class="header__nav__link">Menu</a>
-          <a href="#" class="header__nav__link">About us</a>
-          <a href="#" class="header__nav__link">Our story</a>
-          <a href="#" class="header__nav__link">Blog</a>
-          <a href="#" class="header__nav__link">Contact</a>
-        </nav>
-        <div class="header__clone">
-          <a href="#" class="header__clone__link">Clone Project
-            <img src="assets/img/arrow.svg" class="arrow-black" alt="">
-          </a>            
-        </div>
-      </div>
-    </div>
-  </header>
+  
+  <?php include('header.php')?>
 
   <main class="main section">
     <div class="container">
@@ -53,7 +29,7 @@
         <div class="main__side">
           <h1 class="main__title">We serve high quality foods of all kinds.</h1>
           <p class="main__text">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text.</p>
-          <button class="btn main__btn">View Menu</button>
+          <a href="menu.php"><button href="menu.php" class="btn main__btn">View Menu</button></a>
           <div class="main__info">
             <div class="main__info__item">
               <h4 class="main__info__title">Opening Times</h4>
@@ -81,7 +57,7 @@
     <div class="container">
       <div class="about__wrapper">
         <div class="about__side">
-          <h3 class="about__subtitle subtitle">KNOW MORE ABOUT US</h3>
+          <a href="about.php"><h3 class="about__subtitle subtitle">KNOW MORE ABOUT US</h3></a>
           <h2 class="title about__title">We source sustainable & line caught Foods</h2>
           <p class="about__text">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text anywhere on the page. </p>
           <div class="about__info">
@@ -116,7 +92,7 @@
               <span class="about__text">Through True Rich Attended does no end it his mother since favourable.</span>
             </div>          
           </div>
-          <button class="btn about__btn">View menu</button>
+          <a href="menu.php"><button href="menu.php" class="btn main__btn">View Menu</button></a>
         </div>
         <div class="about__side">
           <div class="about__gallery">
@@ -232,11 +208,11 @@
           </div>
         </a>
       </div>
-      <button class="btn menu__btn">View menu</button>
+      <a href="menu.php"><button href="menu.php" class="btn main__btn">View Menu</button></a>
     </div>
   </section>
 
-  <section class="section video">
+  <!-- <section class="section video">
     <div class="container">
       <div class="video__wrapper">
         <div class="video__side video__left">
@@ -259,7 +235,7 @@
         <img src="assets/img/Play-icon.png" alt="">
       </div>
     </div> 
-  </section>
+  </section> -->
 
   <section class="section blog">
     <div class="container">
@@ -292,18 +268,11 @@
       </div>
     </div>
   </section>
+  
+  <?php include('map.php')?>
 
+  <?php include('footer.php')?>
 
-  <!-- Модальные окна -->
-
-  <div class="video-modal">
-    <div class="video-modal__wrapper">
-      <div class="video-exit">
-        <img src="assets/img/cross.svg" alt="">
-      </div>
-      <div class="video-watch">There is video</div>
-    </div>
-  </div>
 
   <script src="js/main.js"></script>
 </body>

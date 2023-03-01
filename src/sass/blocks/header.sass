@@ -26,6 +26,8 @@
       font-weight: 500
       margin-right: 40px
       color: #fff
+      &:last-child
+        margin-right: 0
   &__clone
     display: flex
     align-items: center
@@ -79,7 +81,7 @@
       margin-right: 0
       position: absolute
       width: 0
-      right: -20px
+      right: 0
       top: 40px
       transition: all 0.3s ease 0s
       display: none
@@ -92,6 +94,14 @@
         width: 100%
         display: block
         text-align: center
+        margin-right: 0
+        &:hover
+          filter: brightness(1.2)
     &__clone
       order: 2
       margin-left: 30%
+
+@media(max-width: 600px)
+  .header
+    &__clone
+      margin-left: 0
