@@ -2,17 +2,17 @@
     <div class="footer-top">
       <div class="container">
         <div class="footer__top">
-          <a href="#" class="footer__logo header__logo">
+          <a href="index.php" class="footer__logo header__logo">
             <img src="assets/img/logo-scops.svg" alt="" class="img">
             <span class="footer__logo__text header__logo__text">Finsweet</span>
           </a>
           <nav class="header__nav footer__nav">
-            <a href="#" class="header__nav__link footer__nav__link">Home</a>
-            <a href="#" class="header__nav__link footer__nav__link">Menu</a>
-            <a href="#" class="header__nav__link footer__nav__link">About us</a>
-            <a href="#" class="header__nav__link footer__nav__link">Our story</a>
-            <a href="#" class="header__nav__link footer__nav__link">Blog</a>
-            <a href="#" class="header__nav__link footer__nav__link">Contact</a>
+            <a href="index.php" class="header__nav__link footer__nav__link">Home</a>
+            <a href="menu.php" class="header__nav__link footer__nav__link">Menu</a>
+            <a href="about.php" class="header__nav__link footer__nav__link">About us</a>
+            <a href="story.php" class="header__nav__link footer__nav__link">Our story</a>
+            <a href="blogs.php" class="header__nav__link footer__nav__link">Blog</a>
+            <a href="contact.php" class="header__nav__link footer__nav__link">Contact</a>
           </nav>
         </div>
       </div>
@@ -31,7 +31,7 @@
           </div>
 
           <div class="footer__contact">
-            <a href="#" class="header__clone__link">Contact us
+            <a href="contact.php" class="header__clone__link">Contact us
               <img src="assets/img/arrow.svg" class="arrow-black" alt="">
             </a>  
           </div>

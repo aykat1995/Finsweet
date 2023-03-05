@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a href="#" class="header__logo">
+        <a href="index.php" class="header__logo">
           <img src="assets/img/logo-scops.svg" alt="" class="img">
           <span class="header__logo__text">Finsweet</span>
         </a>

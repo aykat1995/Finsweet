@@ -54,4 +54,15 @@
   .map__info__item {
     margin-bottom: 0;
   }
+}
+@media (max-width: 630px) {
+  .map__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map__info__item {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=map.css.map */

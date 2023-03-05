@@ -133,4 +133,5 @@
   <?php include('map.php')?>
   <?php include('footer.php')?>
 
+  <script src="js/main.js"></script>
 </body>  

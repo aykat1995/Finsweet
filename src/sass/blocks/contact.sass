@@ -1,0 +1,82 @@
+.contact
+  &__wrapper
+    display: flex
+  &__side
+    flex: 1
+    display: flex
+    &:first-child
+      flex-direction: column
+      margin-right: 50px
+    &:last-child
+      justify-content: space-between
+  &__title
+    font-size: 48px
+    line-height: 58px
+    margin-bottom: 20px
+  &__form
+    display: flex
+    flex-wrap: wrap
+    margin: 40px 0
+  &__input
+    flex: 1
+    padding: 14px 32px
+    color: #fff
+    font-size: 16px
+    border: 1px solid rgba(255, 255, 255, 0.04)
+    background-color: transparent
+    margin: 0 20px 20px 0
+    &:last-child
+      flex: 2
+      min-height: 140px
+  &__btn
+    padding: 20px 32px
+    background: #27252D
+    color: #fff
+    font-size: 16px
+  &__img
+    max-width: 240px
+    max-height: 500px
+    &:first-child
+      transform: translateY(20px)
+    &:last-child
+      transform: translateY(-20px)
+
+.arrow-yellow
+  margin-left: 20px
+
+@media(max-width: 997px)
+  .contact
+    &__wrapper
+      flex-direction: column
+    &__side
+      &:first-child
+        margin-right: 0
+        margin-bottom: 80px
+      &:last-child
+        justify-content: space-around
+
+@media(max-width: 640px)
+  .contact
+    &__title
+      font-size: 38px
+      line-height: 48px
+    &__side
+      &:first-child
+        margin-bottom: 60px
+        padding: 0 30px
+    &__img
+      max-width: 200px
+      max-height: 420px
+
+@media(max-width: 440px)
+  .contact
+    &__title
+      font-size: 28px
+      line-height: 38px
+    &__side
+      &:first-child
+        margin-bottom: 50px
+        padding: 0
+    &__img
+      max-width: 160px
+      max-height: 332px

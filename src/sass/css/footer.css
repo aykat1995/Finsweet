@@ -51,4 +51,16 @@
 }
 .footer__nav {
   margin-right: 0;
+}
+
+@media (max-width: 600px) {
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__social {
+    margin: 12px 0;
+  }
 }/*# sourceMappingURL=footer.css.map */

@@ -1,23 +1,48 @@
 .story
   &__wrapper
     display: flex
+    justify-content: space-between
   &__side
-    flex: 1
+    flex-basis: 48%
+    margin-bottom: 30px
   &__title
     font-size: 56px
     line-height: 68px
+    min-height: 95px
   &__right-title
-    font-size: 32px
-    line-height: 48px
-    margin-bottom: 30px
+    font-size: 30px
+    line-height: 44px
+    min-height: 95px
     span
       color: #FFB577
   &__text
-    margin: 25px 35px
+    margin-bottom: 35px
   &__images
     display: flex
     justify-content: space-between
   &__img
     max-width: 240px
     &:first-child
-      transform: translateY(-30px)
+      transform: translateY(30px)
+
+@media(max-width: 997px)
+  .story
+    &__wrapper
+      flex-direction: column
+    &__img
+      &:first-child
+        transform: translateY(0)
+        margin-right: 30px
+    &__images
+      justify-content: center
+
+@media(max-width: 600px)
+  .story
+    &__title
+      font-size: 48px
+      line-height: 58px
+    &__img
+      &:first-child
+        height: 350px
+      &:last-child
+        height: 380px

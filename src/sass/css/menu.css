@@ -62,6 +62,8 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu__cathegory__link {
   font-family: "Playfair Display";
